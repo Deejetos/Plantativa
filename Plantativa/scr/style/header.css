@@ -1,0 +1,82 @@
+header {
+/*Define a posição */
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    /*Define a flexibilidade do conteúdo */
+    align-items: center;
+    /*Define o alinhamento dos elementos */
+    justify-content: space-between;
+    /*Define a distribuição dos elementos */
+}
+
+#nav_logo {
+    font-size: 24px;
+    color:green;
+}
+
+#nav_list {
+    display: flex;
+    /*Define a flexibilidade do conteúdo */
+    list-style: none;
+    /*Remove a margem inicial e final do lista */
+    gap: 48px;
+    /*Define a margem entre os itens */
+}
+
+.nav-item a {
+    text-decoration: none;
+    /*Remove a decoração padrão do link */
+    color: #1d1d1dad;
+    font-weight: 600;
+    /*Define a fonte e o peso do link */
+}
+
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: green 2px solid;
+    /*Define a cor e a borda do link ativo */
+}
+
+#mobile_btn {
+    display: none;
+}
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 880px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+#mobile_menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+}
+
+#mobile_nav_list .nav-item{
+    list-style: none;
+    text-align: center;
+}
