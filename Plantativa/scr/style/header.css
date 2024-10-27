@@ -4,7 +4,7 @@ header {
     padding: 28px 8%;
     position: sticky;
     top: 0;
-    background-color: #fff9ea;
+    background-color: var(--color-primary-1);
     z-index: 3;
 }
 
@@ -20,7 +20,7 @@ header {
 
 #nav_logo {
     font-size: 24px;
-    color:green;
+    color:var(--color-primary-3);
 }
 
 #nav_list {
@@ -35,14 +35,14 @@ header {
 .nav-item a {
     text-decoration: none;
     /*Remove a decoração padrão do link */
-    color: #1d1d1dad;
+    color: var(--color-primary-2)ad;
     font-weight: 600;
     /*Define a fonte e o peso do link */
 }
 
 .nav-item.active a {
-    color: #1d1d1d;
-    border-bottom: green 2px solid;
+    color: var(--color-primary-2);
+    border-bottom: var(--color-primary-3) 2px solid;
     /*Define a cor e a borda do link ativo */
 }
 

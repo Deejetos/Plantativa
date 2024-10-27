@@ -11,6 +11,6 @@ footer{
 }
 
 #copyright {
-    color: black;
+    color: var(color-primary-2);
     font-weight: 500;
 }
