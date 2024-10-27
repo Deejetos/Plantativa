@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="scr/style/styles.css">
-    <link rel="stylesheet" href="scr/style/header.css">
-    <link rel="stylesheet" href="scr/style/home.css">
-    <link rel="stylesheet" href="scr/style/produtos.css">
+    <link rel="stylesheet" href="scr/style/import.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Plantativa</title>
@@ -21,14 +18,14 @@
                 <li class="nav-item active">
                     <a href="#home">Início</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre o Projeto</a>
+                </li>
 
                 <li class="nav-item">
                     <a href="#produto">Produtos</a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#sobre">Sobre nós</a>
-                </li>
             </ul>
             <button class="btn-default">Cadastrar</button>
             <button id="mobile_btn">
@@ -44,11 +41,11 @@
                 </li>
 
                 <li id="nav-item">
-                    <a href="#Produtos">Produtos</a>
+                    <a href="#sobre">Sobre o Projeto</a>
                 </li>
 
                 <li id="nav-item">
-                    <a href="#sobre">Sobre nós</a>
+                    <a href="#produto">Produtos</a>
                 </li>
             </ul>
             <button class="btn-default">Cadastrar</button>
@@ -63,7 +60,7 @@
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque ac arcu cursus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                 
                 <div id="cta_buttons">
-                    <a href="#" class="btn-default">
+                    <a href="#produto" class="btn-default">
                         Ver loja
                     </a>
                 </div>
@@ -87,10 +84,53 @@
                 <img src="scr/img/download.jpg" alt="">
             </div>
         </section>
+
+        <section id="sobre">
+            <h2 class="section-title">Sobre o Projeto</h2>
+            <h3 class="section-subtitle">Conheça a Plantativa</h3>
+            
+            <div id="sobre_content">
+                <img src="scr/img/Logo.jpg" alt="">
+                <div class="sobre_content">
+                    
+                    <h3 class="sobre_title">
+                        Quem somos
+                    </h3>
+                    <p class="sobre_description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque ac arcu cursus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                </div>    
+            </div>
+            <div id="sobre_content">
+                <img src="scr/img/Gastão.jpg" alt="">
+                <div class="sobre_content">
+                    
+                    <h3 class="sobre_title">
+                        O que é Plantativa
+                    </h3>
+                    <p class="sobre_description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque ac arcu cursus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                </div>
+            </div>
+            <div id="sobre_content">
+                <img src="scr/img/Agricultura.jpeg" alt="">
+                <div class="sobre_content">
+                    
+                    <h3 class="sobre_title">
+                        Como funcionamos
+                    </h3>
+                    <p class="sobre_description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque ac arcu cursus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <section id="produto">
             <h2 class="section-title">Produtos</h2>
             <h3 class="section-subtitle">Produtos de confiança</h3>
-
+    
             <div id="Products">
                 <div class="product">
                     <div class="product-heart">
@@ -195,11 +235,33 @@
             </div>
             
         </section>
-        <section id="sobre">
-            <h2 class="section-title">Sobre nós</h2>
-            <h3 class="section-subtitle">Conheça a Plantativa</h3>
     </main>
 
+    <footer>
+        <img src="scr/img/wave.svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">
+                &copy; 2024 Nicolas Gomes Siqueira. Todos os direitos reservados.
+            </span>
+            <span id="privacy_policy">
+                <a href="#">Política de Privacidade</a>
+            </span>
+            <div class="social-media-buttons" >
+                <a href="https://www.instagram.com/plantaativa2024?utm_source=qr&igsh=MWF2NThyNWZzOW11eQ==" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                    
+                </a>
+                <a href="https://www.linkedin.com/in/plantaativa-ba5611315/" class="linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    
+                </a>
+                <a href="https://chat.whatsapp.com/JXxblfC78c7LWnPEBzGvqa" class="whatsapp">
+                    
+                    <i class="fab fa-whatsapp"></i>
+            </a>
+            </div>
+        </div>
+    </footer>
     <script src="scr/javascript/script.js"></script>
 </body>
 </html>
