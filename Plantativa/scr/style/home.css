@@ -41,8 +41,10 @@
 
 #banner img {
     height: 100%;
-    width: fit-content;
-    
+    width: 800px;
+    border-radius: 5%;
+    border-image: fill;
+    border-color: var(--color-primary-2);
 }
 
 @media screen and (max-width: 880px) {

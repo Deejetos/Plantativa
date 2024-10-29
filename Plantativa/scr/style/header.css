@@ -1,5 +1,4 @@
 header {
-/*Define a posição */
     width: 100%;
     padding: 28px 8%;
     position: sticky;
@@ -11,11 +10,8 @@ header {
 #navbar {
     width: 100%;
     display: flex;
-    /*Define a flexibilidade do conteúdo */
     align-items: center;
-    /*Define o alinhamento dos elementos */
     justify-content: space-between;
-    /*Define a distribuição dos elementos */
 }
 
 #nav_logo {
@@ -25,25 +21,19 @@ header {
 
 #nav_list {
     display: flex;
-    /*Define a flexibilidade do conteúdo */
     list-style: none;
-    /*Remove a margem inicial e final do lista */
     gap: 48px;
-    /*Define a margem entre os itens */
 }
 
 .nav-item a {
     text-decoration: none;
-    /*Remove a decoração padrão do link */
-    color: var(--color-primary-2)ad;
+    color: var(--color-primary-2);
     font-weight: 600;
-    /*Define a fonte e o peso do link */
 }
 
 .nav-item.active a {
     color: var(--color-primary-2);
     border-bottom: var(--color-primary-3) 2px solid;
-    /*Define a cor e a borda do link ativo */
 }
 
 #mobile_btn {
