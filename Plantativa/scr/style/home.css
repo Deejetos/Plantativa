@@ -41,7 +41,7 @@
 
 #banner img {
     height: 100%;
-    width: 800px;
+    width: 700px;
     border-radius: 5%;
     border-image: fill;
     border-color: var(--color-primary-2);

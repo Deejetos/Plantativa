@@ -33,4 +33,20 @@ $(document).ready(function() {
         navItems.removeClass('active'); // Remove a classe 'active' de todos
         $(navItems[activeSectionIndex]).addClass('active'); // Adiciona a classe 'active' ao item correspondente
     });
+
+    ScrollReveal().reveal('#cta', {
+        origin: 'left',
+        duration: 3000,
+        distance: '20%',
+    })
+    ScrollReveal().reveal('.product', {
+        origin: 'left',
+        duration: 3000,
+        distance: '20%',
+    })
+    ScrollReveal().reveal('#sobre_content', {
+        origin: 'right',
+        duration: 3000,
+        distance: '20%',
+    })
 });
