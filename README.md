@@ -1,2 +1,2 @@
 # Plantativa
-#Pyetro não é hétero
+# Pyetro não é hétero
