@@ -16,7 +16,7 @@ body {
 
 form {
     padding: 50px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 50px;
     display: flex;
     flex-direction: column;

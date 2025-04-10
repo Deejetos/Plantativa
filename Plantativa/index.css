@@ -11,7 +11,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: brown;
+    background-color: gray;
     background-image: url(./Imagens/background.jpg);
     background-size: cover;
     background-position: 50%;
