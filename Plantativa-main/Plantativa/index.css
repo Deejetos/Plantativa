@@ -11,8 +11,8 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: brown;
-    background-image: url(./Imagens/background.jpg);
+    background-color: #2E7D32;
+    background-image: url();
     background-size: cover;
     background-position: 50%;
     padding: 20px;
@@ -20,7 +20,7 @@ body {
 
 form {
     padding: 50px;
-    background-color: white;
+    background-color: #2E7D32;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ h1 {
   }
 
 .barra-horizontal {
-    background-color: #66f842;
+    background-color: #2E7D32;
     height: 5px;
     width: 210px;
   }
@@ -55,8 +55,8 @@ button {
     align-self: center;
     width: 175px;
     border-radius: 30px;
-    background-image: linear-gradient(#0df03e, #0b9b36);
-    border: solid 1px #07a32e;
+    background-image: linear-gradient(#2E7D32, #2E7D32);
+    border: solid 1px #2E7D32;
     border-right-width: 4px;
     border-bottom-width: 4px;
     font-size: 14px;
