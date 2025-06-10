@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guia de Sementes e Adubos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 30px 15px;
+      color: #333;
+    }
+
+    header {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      padding: 30px 40px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .barra-topo {
+      margin-bottom: 25px;
+    }
+
+    .barra-topo a {
+      color: #4CAF50;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .barra-topo a:hover {
+      color: #388e3c;
+    }
+
+    .item-section {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .item-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .item-imagem {
+      flex: 1 1 45%;
+      max-width: 45%;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .item-imagem img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .item-imagem:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .item-texto {
+      flex: 1 1 50%;
+    }
+
+    .item-texto h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #4CAF50;
+      font-weight: 700;
+    }
+
+    .item-texto p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .barra-meio {
+      height: 3px;
+      background-color: #4CAF50;
+      border-radius: 5px;
+      margin: 40px 0;
+      width: 100%;
+    }
+
+    .btn-loja {
+      display: block;
+      margin: 50px auto 0 auto;
+      padding: 18px 35px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: 700;
+      font-size: 1.3rem;
+      text-align: center;
+      border-radius: 12px;
+      width: fit-content;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 6px 15px rgba(72, 161, 72, 0.7);
+    }
+
+    .btn-loja:hover {
+      background-color: #388e3c;
+      box-shadow: 0 8px 18px rgba(56, 142, 60, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="barra-topo">
+      <a href="index.html">&larr; Voltar para Home</a>
+    </div>
+
+    <!-- Semente de Alface -->
+    <section id="semente-alface" class="item-section">
+      <div class="item-imagem">
+        <img src="scr/img/Alface-semente.jpeg" alt="Semente de Alface" />
+      </div>
+      <div class="item-texto">
+        <h1>Semente de Alface</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque ac arcu cursus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      </div>
+    </section>
+
+    <div class="barra-meio"></div>
+
+    <!-- Semente de Cenoura -->
+    <section id="semente-cenoura" class="item-section">
+      <div class="item-imagem">
+        <img src="scr/img/Semente de Cenoura.jpeg" alt="Semente de Cenoura" />
+      </div>
+      <div class="item-texto">
+        <h1>Semente de Cenoura</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque ac arcu cursus elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      </div>
+    </section>
+
+    <div class="barra-meio"></div>
+
+    <!-- Adubos -->
+    <section id="adubos" class="item-section" style="flex-wrap: wrap; justify-content: center;">
+      <div class="item-imagem" style="max-width: 250px; flex: none; margin: 15px;">
+        <img src="scr/img/adubo-organico.jpeg" alt="Adubo Orgânico" />
+        <div class="item-texto" style="text-align: center; margin-top: 10px;">
+          <h1 style="font-size: 1.5rem; margin-bottom: 8px;">Adubo Orgânico</h1>
+          <p style="font-size: 1rem; color: #666;">Enriquece o solo com nutrientes naturais e melhora a retenção de água.</p>
+        </div>
+      </div>
+
+      <div class="item-imagem" style="max-width: 250px; flex: none; margin: 15px;">
+        <img src="scr/img/adubo-quimico.jpeg" alt="Adubo Químico" />
+        <div class="item-texto" style="text-align: center; margin-top: 10px;">
+          <h1 style="font-size: 1.5rem; margin-bottom: 8px;">Adubo Químico</h1>
+          <p style="font-size: 1rem; color: #666;">Fornece nutrientes essenciais para crescimento rápido e saudável.</p>
+        </div>
+      </div>
+
+      <div class="item-imagem" style="max-width: 250px; flex: none; margin: 15px;">
+        <img src="scr/img/adubo-composto.jpeg" alt="Composto Orgânico" />
+        <div class="item-texto" style="text-align: center; margin-top: 10px;">
+          <h1 style="font-size: 1.5rem; margin-bottom: 8px;">Composto Orgânico</h1>
+          <p style="font-size: 1rem; color: #666;">Melhora a estrutura do solo e promove a biodiversidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <a href="loja.html" class="btn-loja">Acessar Loja</a>
+  </header>
+</body>
+</html>
