@@ -103,6 +103,13 @@
       value = value.replace(/(\d{4})(\d)/, "$1-$2");
       input.value = value;
     }
+    function formatTelefone(input) {
+      let value = input.value.replace(/\D/g, "");
+      if (value.length > 11) value = value.slice(0, 11);
+      value = value.replace(/(\d{2})(\d{1,2})/, "($1) $2")
+      value = value.replace(/(\d{5})(\d{1,4})$/, "$1-$2");
+      input.value = value;
+    }
   </script>
 </head>
 <body>
@@ -118,7 +125,7 @@
 
       <div class="campo-input">
         <label for="email">Seu e-mail*</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required placeholder="seuemail@gmail.com"/>
       </div>
 
       <div class="campo-input">
@@ -136,11 +143,18 @@
 
       <div class="campo-input">
         <label for="telefone">Insira seu número de telefone</label>
-        <input type="tel" id="telefone" name="telefone" />
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          maxlength="15"
+          oninput="formatTelefone(this)"
+          placeholder="(00) 00000-0000"
+        />
       </div>
 
       <button class="btn-default">
-        <a href="PlantaAtiva.html">Cadastrar</a>
+        <a href="index.html">Cadastrar</a>
       </button>
     </form>
   </main>
