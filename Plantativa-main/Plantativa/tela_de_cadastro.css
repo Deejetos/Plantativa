@@ -20,7 +20,7 @@ body {
 
 form {
     padding: 50px;
-    background-color: white;
+    background-color: rgb(88, 88, 88);
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -73,6 +73,6 @@ input {
   }
 
 a {
-    color: white;
+    color: rgb(102, 102, 102);
     font-weight: 500;
   }

@@ -14,6 +14,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Plantativa</title>
 </head>
+<script>
+    // Seleciona todos os ícones de coração
+    document.querySelectorAll('.product-heart i').forEach(heart => {
+        heart.addEventListener('click', () => {
+            heart.classList.toggle('favorited'); // Alterna a classe 'favorited'
+        });
+    });
+</script>
+
 <body>
     <header>
         <nav id="navbar">
@@ -143,19 +152,14 @@
         <section id="produto">
             <h2 class="section-title">Produtos</h2>
             <h3 class="section-subtitle">Produtos de confiança</h3>
-    
+        
             <div id="Products">
+                <!-- Produto 1 -->
                 <div class="product">
-                    <div class="product-heart">
-                        <i class="fas fa-heart"></i>
-                    </div>
+                    <div class="product-heart"><i class="fas fa-heart"></i></div>
                     <img src="scr/img/Alface-planta.jpeg" class="product-img" alt="">
-                    <h3 class="product-title">
-                        Alface
-                    </h3>
-                    <span class="product-description">
-                        description of alface
-                    </span>
+                    <h3 class="product-title">Alface</h3>
+                    <span class="product-description">description of alface</span>
                     <div class="product-price">
                         R$4,50
                         <button class="btn-default">
@@ -163,25 +167,21 @@
                         </button>
                     </div>
                     <div class="product-rate">
-                    <i class="fas fa-star"></i> 
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(500+)</span>
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(500+)</span>
                     </div>
                 </div>
+        
+                <!-- Produto 2 -->
                 <div class="product">
-                    <div class="product-heart">
-                        <i class="fas fa-heart"></i>
-                    </div>
+                    <div class="product-heart"><i class="fas fa-heart"></i></div>
                     <img src="scr/img/Alface-semente.jpeg" class="product-img" alt="">
-                    <h3 class="product-title">
-                        Semente de Alface
-                    </h3>
-                    <span class="product-description">
-                        description of alface
-                    </span>
+                    <h3 class="product-title">Semente de Alface</h3>
+                    <span class="product-description">description of alface</span>
                     <div class="product-price">
                         R$79,00
                         <button class="btn-default">
@@ -189,24 +189,20 @@
                         </button>
                     </div>
                     <div class="product-rate">
-                    <i class="fas fa-star"></i> 
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(500+)</span>
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(500+)</span>
                     </div>
                 </div>
+        
+                <!-- Produto 3 -->
                 <div class="product">
-                    <div class="product-heart">
-                        <i class="fas fa-heart"></i>
-                    </div>
+                    <div class="product-heart"><i class="fas fa-heart"></i></div>
                     <img src="scr/img/Cenoura.jpeg" class="product-img" alt="">
-                    <h3 class="product-title">
-                        Cenoura
-                    </h3>
-                    <span class="product-description">
-                        description of Cenoura
-                    </span>
+                    <h3 class="product-title">Cenoura</h3>
+                    <span class="product-description">description of Cenoura</span>
                     <div class="product-price">
                         R$6,90
                         <button class="btn-default">
@@ -214,40 +210,35 @@
                         </button>
                     </div>
                     <div class="product-rate">
-                    <i class="fas fa-star"></i> 
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(500+)</span>
-                    
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                </div>
+        
+                <!-- Produto 4 -->
+                <div class="product">
+                    <div class="product-heart"><i class="fas fa-heart"></i></div>
+                    <img src="scr/img/Semente de Cenoura.jpeg" class="product-img" alt="">
+                    <h3 class="product-title">Semente de Cenoura</h3>
+                    <span class="product-description">description of Cenoura</span>
+                    <div class="product-price">
+                        R$32,00
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i> 
+                        <i class="fas fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
                 </div>
             </div>
-            <div class="product">
-                <div class="product-heart">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <img src="scr/img/Semente de Cenoura.jpeg" class="product-img" alt="">
-                <h3 class="product-title">
-                    Semente de Cenoura
-                </h3>
-                <span class="product-description">
-                    description of Cenoura
-                </span>
-                <div class="product-price">
-                    R$32,00
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                </div>
-                <div class="product-rate">
-                <i class="fas fa-star"></i> 
-                <i class="fas fa-star"></i>
-                <span>(500+)</span>
-                
-            </div>
-            </div>
-            
         </section>
+        
     </main>
 
     <footer>
