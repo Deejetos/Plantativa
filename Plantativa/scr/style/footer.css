@@ -1,0 +1,16 @@
+footer{
+    background-color: #b4ffba;
+}
+
+#footer_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+#copyright {
+    color: var(color-primary-2);
+    font-weight: 500;
+}

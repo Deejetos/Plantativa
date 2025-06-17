@@ -1,0 +1,275 @@
+/* Layout da seção de produtos */
+#produto {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #1d1d1d;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+#Products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.product {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  width: 22%;
+  min-width: 240px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --color-primary-1: #fff9ea;
+  --color-primary-2: #1d1d1d;
+  --color-primary-3: #6de26d;
+}
+* {
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .roboto-thin-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .roboto-light-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .roboto-regular-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .roboto-medium-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .roboto-bold-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .roboto-black-italic {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primary-1);
+}
+
+section {
+    padding: 28px 8%;
+}
+
+.btn-default {
+    border: none;
+    /* Remove border */
+    display: flex;
+    /* Define a flexibilidade do conteúdo */
+    align-items: center;
+    /* Centralizar o conteúdo verticalmente */
+    justify-content: center;
+    /* Centralizar o conteúdo horizontalmente */
+    background-color: var(--color-primary-3);
+    /* Cor do fundo */
+    border-radius: 12px;
+    /* Efeito de arredondamento */
+    padding: 10px 14px;
+    /* Definir espaçamento entre os elementos */
+    font-weight: 600;
+    /* Define a negrito */
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    /* Define o efeito de sombra */
+    cursor: pointer;
+    /* Define o cursor para o ponteiro */
+    transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+    background-color: #77d377;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-primary-2);
+    box-shadow: 0px, 0px, 12px  4px rgba(0, 0, 0, 0.1);
+}
+
+.social-media-buttons a.whatsapp:hover{
+    background-color: #f5f5f5;
+    color: var(--color-primary-3);
+}
+
+.social-media-buttons a.linkedin:hover{
+    background-color: #fff;
+    color: #3b5998;
+}
+
+.social-media-buttons a.instagram:hover{
+    background-color: #f5f5f5;
+    color: #e4405f;
+}
+
+.section-title {
+  color: var(--color-primary-3);
+}
+
+.section-subtitle { 
+    font-size: 2.1875rem;
+    color: var(--color-primary-2);
+}
+.product:hover {
+  transform: scale(1.03);
+}
+
+.product-heart i {
+  color: #ccc; /* cor inicial: cinza */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.product-heart i.favorited {
+  color: red; /* cor ao favoritar */
+}
+
+
+.product-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  margin: 8px 0;
+  color: #1d1d1d;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-price .btn-default {
+  background-color: #27ae60;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-price .btn-default a,
+.product-price .btn-default i {
+  color: #fff;
+}
+
+.product-rate {
+  color: #f39c12;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  .product {
+      width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product {
+      width: 90%;
+  }
+}
