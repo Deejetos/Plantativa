@@ -117,7 +117,7 @@
     <h1>Cadastro para Vendedor</h1>
     <div class="barra-horizontal"></div>
 
-    <form action="">
+    <form action="loja.html" method="GET">
       <div class="campo-input">
         <label for="nome">Digite seu nome de usuário</label>
         <input type="text" id="nome" name="nome" required />
@@ -135,8 +135,11 @@
           id="cnpj"
           name="cnpj"
           maxlength="18"
+          minlength="18"
           oninput="formatCNPJ(this)"
           placeholder="00.000.000/0000-00"
+          pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}"
+          title="Digite um CNPJ válido no formato 00.000.000/0000-00"
           required
         />
       </div>
@@ -148,14 +151,16 @@
           id="telefone"
           name="telefone"
           maxlength="15"
+          minlength="15"
           oninput="formatTelefone(this)"
           placeholder="(00) 00000-0000"
+          pattern="\(\d{2}\)\s\d{5}-\d{4}"
+          title="Digite um CNPJ válido no formato (00) 00000-0000"
+          required
         />
       </div>
 
-      <button class="btn-default">
-        <a href="loja.html">Cadastrar</a>
-      </button>
+      <button class="btn-default" type="submit">Cadastrar</button>
     </form>
   </main>
 </body>
